@@ -3,7 +3,7 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                        echo 'Hi, this is Anshul from LevelUp360'
+                        echo 'Hi, this is Subhankar learning DevOps'
                         echo 'We are Starting the Testing'
                   }
             }
@@ -15,6 +15,11 @@ pipeline {
             stage('Deploy') {
                   steps {
                         echo "Deploying in Staging Area"
+                  }
+            }
+            stage('Deploy in Pre-Production Or Soft Launch Area') {
+                  steps {
+                        echo "Deploying in Pre-Production Or Soft Launch Area"
                   }
             }
             stage('Deploy Production') {
