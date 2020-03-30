@@ -16,8 +16,10 @@ pipeline {
                   steps {
                         echo "Deploying in Staging Area"
                   }
-                   steps {
-                        echo "Deploying in Pre-Production Or Soft Launch Area"
+            }
+            stage('Test') {
+                  steps {
+                        echo 'Triggering UI Automation Tests in Stage'
                   }
             }
             stage('Deploy Production') {
