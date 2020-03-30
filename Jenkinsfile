@@ -16,9 +16,7 @@ pipeline {
                   steps {
                         echo "Deploying in Staging Area"
                   }
-            }
-            stage('Deploy in Pre-Production Or Soft Launch Area') {
-                  steps {
+                   steps {
                         echo "Deploying in Pre-Production Or Soft Launch Area"
                   }
             }
